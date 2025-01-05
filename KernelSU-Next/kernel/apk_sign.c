@@ -18,7 +18,8 @@
 #include "klog.h" // IWYU pragma: keep
 #include "kernel_compat.h"
 
-
+#define EXPECTED_SIZE 0x03e6
+#define EXPECTED_HASH "79e590113c4c4c0c222978e413a5faa801666957b1212a328e46c00c69821bf7"
 
 struct sdesc {
 	struct shash_desc shash;
