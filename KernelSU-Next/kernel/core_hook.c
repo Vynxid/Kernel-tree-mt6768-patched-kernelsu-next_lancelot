@@ -922,6 +922,9 @@ out_ksu_try_umount:
 #endif
 	}
 
+// First definition (line 883)
+bool is_zygote_child = susfs_is_sid_equal(old->security, susfs_zygote_sid);
+
 	// check old process's selinux context, if it is not zygote, ignore it!
 	// because some su apps may setuid to untrusted_app but they are in global mount namespace
 	// when we umount for such process, that is a disaster!
