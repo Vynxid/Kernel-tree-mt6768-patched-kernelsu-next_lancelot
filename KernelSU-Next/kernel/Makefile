@@ -1,4 +1,4 @@
-kernelsu-objs := ksu.o
+kernelsu-objs := ksu.ol
 kernelsu-objs += allowlist.o
 kernelsu-objs += apk_sign.o
 kernelsu-objs += sucompat.o
